@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C5714F9207B314A00073485 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5714F8207B314A00073485 /* opencv2.framework */; };
+		5C5714FB207B33EC00073485 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5714FA207B33EC00073485 /* AVFoundation.framework */; };
+		5C5714FD207B33F400073485 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5714FC207B33F400073485 /* AssetsLibrary.framework */; };
+		5C5714FF207B33FF00073485 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5714FE207B33FF00073485 /* CoreMedia.framework */; };
+		5C571501207B340600073485 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C571500207B340600073485 /* CoreVideo.framework */; };
 		EE2D8D7E1C7F015B0004F1FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2D8D7D1C7F015B0004F1FC /* main.m */; };
 		EE2D8D811C7F015B0004F1FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2D8D801C7F015B0004F1FC /* AppDelegate.m */; };
 		EE2D8D841C7F015B0004F1FC /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE2D8D831C7F015B0004F1FC /* ViewController.mm */; };
@@ -15,13 +20,14 @@
 		EE2D8D8C1C7F015B0004F1FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2D8D8A1C7F015B0004F1FC /* LaunchScreen.storyboard */; };
 		EE658FFF1C7F02F100FE63A0 /* Calibrator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE658FFD1C7F02F100FE63A0 /* Calibrator.cpp */; };
 		EECA2EF51C7F0A4200AAEA40 /* VideoSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = EECA2EF41C7F0A4200AAEA40 /* VideoSource.mm */; };
-		FA955ED895C8EA381B0CBE49 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 038F587D0CC8D5CF6459773F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		038F587D0CC8D5CF6459773F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6725A9A1449DF23AF45BE3E7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		C221B2D9229747657820B918 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5C5714F8207B314A00073485 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../Downloads/opencv2.framework; sourceTree = "<group>"; };
+		5C5714FA207B33EC00073485 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5C5714FC207B33F400073485 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		5C5714FE207B33FF00073485 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		5C571500207B340600073485 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		EE2D8D791C7F015B0004F1FC /* camera-calibration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "camera-calibration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2D8D7D1C7F015B0004F1FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE2D8D7F1C7F015B0004F1FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,17 +50,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA955ED895C8EA381B0CBE49 /* libPods.a in Frameworks */,
+				5C571501207B340600073485 /* CoreVideo.framework in Frameworks */,
+				5C5714FF207B33FF00073485 /* CoreMedia.framework in Frameworks */,
+				5C5714FD207B33F400073485 /* AssetsLibrary.framework in Frameworks */,
+				5C5714FB207B33EC00073485 /* AVFoundation.framework in Frameworks */,
+				5C5714F9207B314A00073485 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8551F0E203BE219EAD9980BE /* Frameworks */ = {
+		5C5714F7207B314A00073485 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				038F587D0CC8D5CF6459773F /* libPods.a */,
+				5C571500207B340600073485 /* CoreVideo.framework */,
+				5C5714FE207B33FF00073485 /* CoreMedia.framework */,
+				5C5714FC207B33F400073485 /* AssetsLibrary.framework */,
+				5C5714FA207B33EC00073485 /* AVFoundation.framework */,
+				5C5714F8207B314A00073485 /* opencv2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -64,8 +78,7 @@
 			children = (
 				EE2D8D7B1C7F015B0004F1FC /* camera-calibration */,
 				EE2D8D7A1C7F015B0004F1FC /* Products */,
-				FA91881B97F336928587709A /* Pods */,
-				8551F0E203BE219EAD9980BE /* Frameworks */,
+				5C5714F7207B314A00073485 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,15 +119,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FA91881B97F336928587709A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C221B2D9229747657820B918 /* Pods.debug.xcconfig */,
-				6725A9A1449DF23AF45BE3E7 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,12 +126,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE2D8D901C7F015B0004F1FC /* Build configuration list for PBXNativeTarget "camera-calibration" */;
 			buildPhases = (
-				D4E0042990D5FFCF171F261B /* Check Pods Manifest.lock */,
 				EE2D8D751C7F015B0004F1FC /* Sources */,
 				EE2D8D761C7F015B0004F1FC /* Frameworks */,
 				EE2D8D771C7F015B0004F1FC /* Resources */,
-				2A927C8979933A2AE6163A18 /* Embed Pods Frameworks */,
-				6A7C510DED9CE727795CBF0A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +150,7 @@
 				TargetAttributes = {
 					EE2D8D781C7F015B0004F1FC = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 9J7SA6Z287;
 					};
 				};
 			};
@@ -182,54 +184,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2A927C8979933A2AE6163A18 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A7C510DED9CE727795CBF0A /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D4E0042990D5FFCF171F261B /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE2D8D751C7F015B0004F1FC /* Sources */ = {
@@ -288,6 +242,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -332,6 +287,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -350,26 +306,26 @@
 		};
 		EE2D8D911C7F015B0004F1FC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C221B2D9229747657820B918 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9J7SA6Z287;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "camera-calibration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.polysfactory.camera-calibration";
+				PRODUCT_BUNDLE_IDENTIFIER = com.calibrate2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		EE2D8D921C7F015B0004F1FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6725A9A1449DF23AF45BE3E7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9J7SA6Z287;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "camera-calibration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.polysfactory.camera-calibration";
+				PRODUCT_BUNDLE_IDENTIFIER = com.calibrate2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
